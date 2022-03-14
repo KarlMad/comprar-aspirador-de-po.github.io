@@ -1,0 +1,459 @@
+/*
+Theme Name: Simple Thing
+Theme URI: #
+Description: Simple Thing Theme
+Author: No One
+Version: 1.0
+*/
+
+/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+	border: none;
+}
+/* Reset End
+-------------------------------------------------------------- */
+
+/* General Rules
+-------------------------------------------------------------- */
+
+body {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 14px;
+}
+
+#container {
+        width: 995px;
+        margin: 0 auto;
+}
+
+/* Formatting
+-------------------------------------------------------------- */
+a {
+	color: #000099;
+}
+
+h1, h2, h3, h4, h5 {
+        font-family: 'Century Gothic', Tahoma, sans-serif;
+        font-weight: bold;
+        clear: none;
+}
+
+h1 {
+        color: #50961D;
+}
+
+h2, h3, h4, h5 {
+        color: #0080C0;
+}
+
+h2, h3 {
+        font-size: 16px;
+}
+
+ul {
+        list-style: square outside none ;
+}
+ol {
+        list-style: decimal outside none;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, blockquote,
+code, hr, table {
+	margin: 0 0 15px 0;
+}
+
+*.alignleft, *.left {
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+*.alignright, *.right {
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+*.aligncenter, *.center {
+	margin: 0 auto 15px;
+	display: block;
+}
+
+/* Header
+-------------------------------------------------------------- */
+
+#header {
+        overflow: hidden;
+}
+
+#logo {
+        float: right;
+}
+
+#logo img {
+        display: block;
+}
+
+#info {
+        float: left;
+        text-align: center;
+        width: 730px;
+}
+
+#info #site-name {
+        letter-spacing: 1.5px;
+        margin: 15px 0 7px;
+        font-size: 38px;
+        color: #7FA325;
+}
+
+#info #site-name a {
+        text-decoration: none;
+}
+
+#info #site-description {
+        letter-spacing: 1.3px;
+        font-family: 'Century Gothic', Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #7FA325;
+}
+
+/* Navigation
+-------------------------------------------------------------- */
+
+#navigation {
+        background: transparent url('assets/images/menu.png') repeat-x top left scroll;
+        text-align: justify;
+        padding: 8px 15px 0;
+        font-size: 13px;
+        margin-bottom: 10px;
+        height: 22px;
+        overflow: hidden;
+}
+
+#navigation a {
+        color: #FFFFFF;
+        font-weight: bold;
+        white-space: pre;
+        display: inline-block;
+}
+
+#navigation span {
+        width: 100%;
+        display: inline-block;
+}
+
+/* Content
+-------------------------------------------------------------- */
+
+#wrapper {
+        overflow: hidden;
+        line-height: 18px;
+}
+
+#content {
+        width: 750px;
+        float: left;
+        padding: 13px 0 0 5px;
+}
+
+div .post,
+div .page {
+        margin-bottom: 30px;
+}
+
+.post .title,
+.page .title {
+        font-size: 22px;
+}
+
+.post .title a,
+.page .title a {
+        color: #50961D;
+        text-decoration: none;
+}
+
+.post .title a:hover,
+.page .title a:hover {
+        color: #CC0000;
+}
+
+.entry {
+        overflow: hidden;
+        margin-bottom: 20px;
+}
+
+.entry h3 {
+        color: #000099;
+}
+
+.entry ul, .entry ol {
+	padding-left: 25px;
+}
+
+.entry ul h5, .entry ol h5 {
+        color: #50961D;
+        font-size: 14px;
+}
+
+.entry blockquote {
+        background-color: #F3F3F3;
+        border: 1px solid #999999;
+        color: #333333;
+        padding: 5px;
+        overflow: hidden;
+        font-size: 13px;
+}
+
+.entry blockquote h2 {
+        margin-bottom: 5px;
+}
+
+.entry blockquote p {
+        margin: 0;
+}
+
+.entry blockquote ul, .entry blockquote ol {
+        overflow: hidden;
+        margin-bottom: 5px;
+}
+
+.meta {
+        background-color: #F3F3F3;
+        border-top: 1px solid #999999;
+        color: #333333;
+        font-size: 11px;
+        line-height: 15px;
+        padding: 5px 10px;
+        overflow: hidden;
+}
+
+.meta p {
+        margin: 0;
+}
+
+.meta .credits {
+        padding-right: 15px;
+        width: 200px;
+        float: left;
+}
+
+.meta .taxonomies {
+        border-left: 1px solid #BBBBBB;
+        padding-left: 15px;
+        float: left;
+}
+
+/* Comments
+-------------------------------------------------------------- */
+
+#comments {
+        font-size: 12px;
+}
+
+#comments div.navigation {
+        overflow: hidden;
+}
+
+ol.commentlist {
+	padding: 0;
+        border-bottom: 1px solid #BBBBBB;
+        margin: 10px 0 25px;
+}
+
+ol.commentlist a {
+	font-weight: normal;
+}
+
+ol.commentlist li.comment {
+	padding: 10px 0 0;
+        border-top: #CCCCCC solid 1px;
+        overflow: hidden;
+}
+
+ol.commentlist li.comment-author-admin,
+ol.commentlist li.bypostauthor {
+	border-top: #BBBBBB solid 5px;
+        background-color: #F3F3F3;
+}
+
+ol.commentlist div.comment-author {
+        width: 200px;
+        float: right;
+        font-size: 12px;
+        margin: 5px 0 15px;
+}
+
+ol.commentlist img.avatar {
+        float: left;
+        margin: 3px 10px 0 0;
+}
+
+ol.commentlist div.author-name {
+        font-weight: bold;
+}
+
+ol.commentlist div.author-name a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: inherit;
+}
+
+ol.commentlist div.comment-time {
+        font-size: 11px;
+}
+
+ol.commentlist div.manage-comment {
+        margin: 10px 10px 0 0;
+}
+
+ol.commentlist div.comment-text {
+        width: 500px;
+        margin: 7px 0 15px 10px;
+        overflow: hidden;
+}
+
+ol.commentlist div.comment-text p {
+        margin-bottom: 7px;
+}
+
+ol.commentlist ul.children {
+        margin: 0;
+        clear: both;
+}
+
+#comment {
+	width: 99%;
+}
+
+/* Sidebar
+-------------------------------------------------------------- */
+
+#sidebar {
+        float: right;
+        width: 180px;
+        border-left: 1px solid #BBBBBB;
+        padding: 15px 5px 0 15px;
+}
+
+.widget .title {
+        margin-bottom: 20px;
+}
+
+.widget {
+}
+
+.widget ul {
+        margin: 0;
+        overflow: hidden;
+}
+
+.widget ul li {
+        margin-bottom: 20px;
+}
+
+/* Footer
+-------------------------------------------------------------- */
+
+#footer {
+        font-size: 11px;
+        background-color: #EEEEEE;
+        border-bottom: 6px solid #222222;
+        border-top: 1px solid #BBBBBB;
+        color: #555555;
+        padding: 10px 0;
+        text-align: center;
+}
+
+/* =WP_PageNavi
+-------------------------------------------------------------- */
+
+.wp-pagenavi {
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+.wp-pagenavi a {
+        margin: 0;
+}
+
+.wp-pagenavi .pages {
+        padding-right: 10px;
+}
+
+.wp-pagenavi .page {
+        border: 1px solid #BBBBBB;
+}
+
+.wp-pagenavi .current {
+        border: 1px solid #555555;
+        font-weight: bold;
+}
+
+.wp-pagenavi .page,
+.wp-pagenavi .current {
+        padding: 3px 5px;
+        margin-left: 5px;
+        background-color: #F3F3F3;
+}
+
+/* =Miscelaneous
+-------------------------------------------------------------- */
+
+.clearfix {
+    display: inline-block;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: block;
+}
